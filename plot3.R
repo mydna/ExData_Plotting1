@@ -1,3 +1,6 @@
+## The following code creates plot 3 for the First Assignment. This code plots the three different
+## sub metering data over time in the two days (1/2-2/2/2007).
+
 energydat<-read.csv("household_power_consumption.txt",header=TRUE,as.is=TRUE,sep=";")
 usefuldata<-energydat[energydat$Date == "1/2/2007" | energydat$Date == "2/2/2007",]
 usefuldata$dttm<-paste(usefuldata$Date,usefuldata$Time)
